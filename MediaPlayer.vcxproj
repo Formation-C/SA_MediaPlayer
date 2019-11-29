@@ -152,12 +152,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="MediaPlayer.cpp" />
+    <ClCompile Include="PauseState.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayingState.cpp" />
     <ClCompile Include="State.cpp" />
+    <ClCompile Include="StoppedState.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PauseState.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayingState.h" />
     <ClInclude Include="State.h" />
+    <ClInclude Include="StoppedState.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

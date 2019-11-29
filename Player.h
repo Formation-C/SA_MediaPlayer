@@ -23,12 +23,21 @@ public:
 
 	void Play() { playing = true; };
 	void Stop() { playing = false; };
+	
 
-	/*void SetState(State _state) { state = _state};
-	State GetCurState() {return state};*/
+	void SetState(State *_state) { state = _state; };
+	State* GetCurState() { return state; };
 
 	void SetTracklist(vector<string>& _tracklist) { *tracklist = _tracklist; };
 	vector<string>* GetTracklist() { return tracklist; };
+
+	string nextTrack();
+	string previousTrack();
+
+	string PlayPlayback();
+	string StopPlayback();
+	string PausePlayback();
+	
 
 
 	

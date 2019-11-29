@@ -24,6 +24,29 @@ int main()
 		cin >> input;
 		if(input != "exit")
 			cout << "input command :" <<  input << endl;
+		
+		try {
+
+			if (input == "play")
+			{
+				player->GetCurState()->onPlay();
+			}
+			else if (input == "stop")
+			{
+				player->GetCurState()->onStop();
+
+			}
+			else
+			{
+				cout << "command unknown" << endl;
+			}
+		}
+		catch (char const* errorMessage)
+		{
+			cout << "Error: "  << errorMessage << endl;
+		}
+
+
 	} while (input != "exit");
 
 	cout << "Au revoir!" << endl;
