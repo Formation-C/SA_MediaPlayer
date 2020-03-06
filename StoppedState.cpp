@@ -7,7 +7,7 @@ using namespace std;
 void StoppedState::onPlay()
 {
 	player->SetState(new PlayingState(player));
-	cout << player->PlayPlayback() << endl;
+	cout<<player->PlayPlayback() << endl;
 	delete this;
 }
 

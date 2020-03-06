@@ -16,6 +16,7 @@ public:
 
 	virtual void onPlay() = 0;
 	virtual void onStop() = 0;
+	virtual void onNext() = 0;
 
 };
 

@@ -36,6 +36,12 @@ int main()
 				player->GetCurState()->onStop();
 
 			}
+			else if (input == "next")
+			{
+				
+				player->GetCurState()->onNext();
+
+			}
 			else
 			{
 				cout << "command unknown" << endl;
@@ -49,6 +55,13 @@ int main()
 
 	} while (input != "exit");
 
+	string s = "SALUT";
+		string t = "SALUT";
+		t[0] = 'x';
+		s = 'N';
+		cout << s << endl;
+		cout << t << endl;
 	cout << "Au revoir!" << endl;
+
 }
 

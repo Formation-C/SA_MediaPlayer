@@ -11,6 +11,7 @@ public:
 
 	void onPlay();
 	void onStop();
+	void onNext() {};
 
 protected:
 private:

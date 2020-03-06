@@ -10,5 +10,7 @@ class PauseState :
 
 	void onPlay();
 	void onStop();
+	void onNext() {};
+
 };
 
